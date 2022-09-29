@@ -131,18 +131,16 @@
         //[3, 7, 23, 12] -> 19
         //[-4, -6, 89, 6]-> 0
 
-        //int[] array = NewArray(5, -10, 10);
-        //PrintArray(array);
-        //int posSum = 0;
+        int[] array = NewArray(5, -10, 10);
+        PrintArray(array);
+        int posSum = 0;
 
-        //foreach (var item in array)
-        //{
-        //    if (item % 2 != 0)
-        //    {
-        //        posSum += item;
-        //    }
-        //}
-        //Console.WriteLine($"Сумма нечетных чисел в массиве {posSum}");
+        for (int i = 1; i < array.Length; i += 2)
+        {
+            posSum += array[i];
+        }
+
+        Console.WriteLine($"Сумма нечетных чисел в массиве {posSum}");
 
         #endregion
 
